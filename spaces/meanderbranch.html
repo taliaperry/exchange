@@ -1,0 +1,68 @@
+<html>
+
+<!-- replaceall roomname with designated title -->
+<head><title>EX-CHANGE 2020 | meander branch</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../scripts/baseline.css">
+<link rel="stylesheet" href="../scripts/simpleLightbox.min.css">
+<script src="../scripts/simpleLightbox.min.js"></script>
+<script src="../scripts/behavior.js"></script>
+</head>
+
+<!-- add any mouseover jpgs for image map between single quotes -->
+<body
+onLoad="MM_preloadImages('')">
+
+<div id="topbar">
+<div style="align-content: left;" >
+<a href="../">
+<img src="../images/a.png" id="logo" alt="EX-CHANGE" onMouseOver="MM_swapImage('logo','','../images/h.gif',1)" onMouseOut="MM_swapImgRestore()"></a></div>
+<div align=right>
+    <p style="padding-right:1.5em;">
+    <a class="nav" href="../map.html">MAP</a><br>
+    <a class="nav" href="../info.html">INFO</a><br>
+    <a class="nav" href="../help.html">HELP</a></p></div>
+    </div><div>
+
+<!-- replaceall TESTempty with page name sequence -->
+<img src="../images/TESTempty/TESTempty.jpg" width="1600" height="900" usemap="#PERSPECTIVE" id="PERSPECTIVE" border="0">
+<map name="PERSPECTIVE">
+
+<!-- see Page Status spreadsheet for links and hover info -->
+<area shape="poly" coords="1010,732, 1016,733, 1017,739, 1017,773, 1008,774, 959,776, 936,778, 921,778, 921,746, 963,740, 1010,732" href="#midview1" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/TESTempty/TESTemptyHOVER.jpg',1)" onMouseOut="MM_swapImgRestore()">
+  </map></div>
+
+
+<div class="sticky"><a class="sticky"href="#PERSPECTIVE">&#8679;</a></div>
+
+
+<div id="midview1" class="grid"><div class="midview1">
+<!-- copy/paste lightbox content here, all jpg, png, gifs -->
+<a href="../workimage/TESTsamplework.jpg" title="Sample caption title info."><img src="../workimage/TESTsamplework.jpg" /></a>
+
+
+</div>
+
+<!-- put images with links to full pdfs or external video viewing here -->
+<a href="https://www.google.com/" title="caption">
+<img src="../workimage/samplegif.gif" /></a></div>
+<script>
+    new SimpleLightbox({elements: '.midview1 a'});
+</script>
+
+    <!-- for multiple middle views, duplicate last div and subset div immediately below, rename all midview2, midview3 etc. -->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../scripts/responsivemap.js"></script>
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	});
+</script>
+</body>
+<footer>&#169; 2020 Carnegie Mellon University School of Architecture | All Rights Reserved</footer>
+
+</html>
