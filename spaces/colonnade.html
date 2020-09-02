@@ -13,7 +13,7 @@
 
 <!-- add any mouseover jpgs for image map between single quotes -->
 <body
-onLoad="MM_preloadImages('')">
+onLoad="MM_preloadImages('../images/colonnade/colonnade_bridgehover.jpg','../images/colonnade/colonnade_wellhover.jpg','../images/colonnade/colonnade_cantilevercloserhover.jpg','../images/colonnade/colonnade_elevatorhover.jpg')">
 
 <div id="topbar">
 <div style="align-content: left;" >
@@ -29,10 +29,16 @@ onLoad="MM_preloadImages('')">
 <!-- replaceall TESTempty with page name sequence -->
 <img src="../images/colonnade/colonnade.jpg" width="1600" height="900" usemap="#PERSPECTIVE" id="PERSPECTIVE" border="0">
 <map name="PERSPECTIVE">
+   
+<area shape="poly" alt="" coords="113,528, 113,655, 77,655, 61,654, 30,653, 30,580, 30,507, 31,503, 33,504, 113,528" href="elevator" alt="To elevator" title="To elevator" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/colonnade/colonnade_elevatorhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
 
-<!-- see Page Status spreadsheet for links and hover info -->
-<area shape="poly" coords="1010,732, 1016,733, 1017,739, 1017,773, 1008,774, 959,776, 936,778, 921,778, 921,746, 963,740, 1010,732" href="#midview1" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/TESTempty/TESTemptyHOVER.jpg',1)" onMouseOut="MM_swapImgRestore()">
-  </map></div>
+<area shape="poly" alt="" coords="1282,846, 1282,842, 1366,842, 1450,842, 1478,856, 1516,873, 1512,874, 1400,874, 1288,874, 1287,870, 1282,846" href="cantilevercloser" alt="To cantilever closer" title="To cantilever closer" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/colonnade/colonnade_cantilevercloserhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+
+<area shape="poly" alt="" coords="1035,884, 943,884, 852,884, 848,883, 852,882, 927,857, 973,842, 1101,842, 1105,843, 1087,853, 1035,884" href="well" alt="To well" title="To well" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/colonnade/colonnade_wellhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+
+<area shape="poly" alt="" coords="685,51, 693,51, 693,129, 650,133, 582,138, 567,140, 564,137, 564,62, 606,59, 670,53, 685,51" href="bridge" alt="To bridge" title="To bridge" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/colonnade/colonnade_bridgehover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+
+</map></div>
 
 
 <div class="sticky"><a class="sticky"href="#PERSPECTIVE">&#8679;</a></div>
