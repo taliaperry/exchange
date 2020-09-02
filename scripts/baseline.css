@@ -47,6 +47,11 @@ color:#000000;text-decoration:none;}
       justify-content: space-between;}
 #logo {width:6.6em; height: auto}
 
+.fullsize {
+    margin:12em 0 12em 0;}
+.fullsize img { height:auto;width:100%;}
+
+
 .grid {
     margin:12em 0 12em 0;
     padding:1em;background-color:#333333;

@@ -1,13 +1,11 @@
 <html>
 
 <!-- replaceall roomname with designated title -->
-<head><title>EX-CHANGE 2020 | rotunda</title>
+<head><title>EX-CHANGE 2020 | Rotunda</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../scripts/baseline.css">
-<link rel="stylesheet" href="../scripts/simpleLightbox.min.css">
-<script src="../scripts/simpleLightbox.min.js"></script>
 <script src="../scripts/behavior.js"></script>
 </head>
 
@@ -32,32 +30,42 @@ onLoad="MM_preloadImages('../images/rotunda/rotunda_elevatorhover.jpg','../image
 
 <area shape="poly" alt="" coords="233,458, 233,559, 232,563, 189,522, 189,449, 206,447, 211,447, 233,458" href="elevatoratfloor3.html" alt="To elevator" title="To elevator" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rotunda/rotunda_elevatorhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
 
-<area shape="poly" alt="" coords="1333,864, 1333,863, 1335,861, 1375,797, 1382,794, 1398,798, 1440,807, 1439,810, 1411,854, 1396,879, 1394,879, 1379,875, 1333,864" href="solarium" alt="To solarium" title="To solarium" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rotunda/rotunda_solariumhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+<area shape="poly" alt="" coords="1333,864, 1333,863, 1335,861, 1375,797, 1382,794, 1398,798, 1440,807, 1439,810, 1411,854, 1396,879, 1394,879, 1379,875, 1333,864" href="solarium.html" alt="To Solarium" title="To Solarium" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rotunda/rotunda_solariumhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
 
-<area shape="poly" alt="" coords="709,795, 716,792, 780,758, 789,758, 825,779, 820,782, 748,820, 740,819, 709,796, 709,795" href="wings" alt="To wings" title="To wings" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rotunda/rotunda_wingshover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+<area shape="poly" alt="" coords="709,795, 716,792, 780,758, 789,758, 825,779, 820,782, 748,820, 740,819, 709,796, 709,795" href="wings.html" alt="To Wings" title="To Wings" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/rotunda/rotunda_wingshover.jpg',1)" onMouseOut="MM_swapImgRestore()">
 
 </map></div>
-
-
-<div class="sticky"><a class="sticky"href="#PERSPECTIVE">&#8679;</a></div>
-
-
-<div id="midview1" class="grid"><div class="midview1">
-<!-- copy/paste lightbox content here, all jpg, png, gifs -->
-<a href="../workimage/TESTsamplework.jpg" title="Sample caption title info."><img src="../workimage/TESTsamplework.jpg" /></a>
-
-
 </div>
 
-<!-- put images with links to full pdfs or external video viewing here -->
-<a href="https://www.google.com/" title="caption">
-<img src="../workimage/samplegif.gif" /></a></div>
-<script>
-    new SimpleLightbox({elements: '.midview1 a'});
-</script>
+<!-- Audio Player. -->
+    
+<audio id="sound1" src="../sounds/57790891.mp3" preload="auto"></audio>
+<audio id="track">
+<source src="http://basichow.com/asserts/interlude.mp3" type="audio/mpeg" /></audio>
 
-    <!-- for multiple middle views, duplicate last div and subset div immediately below, rename all midview2, midview3 etc. -->
+<div id="player-container">
+<div id="play-pause" class="play">Play</div></div>
 
+<script type="text/javascript">
+    var track = document.getElementById('track');
+    var controlBtn = document.getElementById('play-pause');
+    function playPause() {
+        if (track.paused) {
+            track.play();
+            //controlBtn.textContent = "Pause";
+            controlBtn.className = "pause";
+        } else {
+            track.pause();
+             //controlBtn.textContent = "Play";
+            controlBtn.className = "play";
+        }
+    }
+
+    controlBtn.addEventListener("click", playPause);
+    track.addEventListener("ended", function() {
+      controlBtn.className = "play";
+    });
+    </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="../scripts/responsivemap.js"></script>
@@ -66,6 +74,7 @@ $(document).ready(function(e) {
 	$('img[usemap]').rwdImageMaps();
 	});
 </script>
+<br><br>
 </body>
 <footer>&#169; 2020 Carnegie Mellon University School of Architecture | All Rights Reserved</footer>
 

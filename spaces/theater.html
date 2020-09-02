@@ -1,7 +1,7 @@
 <html>
 
 <!-- replaceall roomname with designated title -->
-<head><title>EX-CHANGE 2020 | theater</title>
+<head><title>EX-CHANGE 2020 | Theater</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400&display=swap" rel="stylesheet">
@@ -49,37 +49,21 @@ onLoad="MM_preloadImages('../images/theater/theater_archivehover.jpg','../images
 <img src="../images/theater/theater.jpg" width="1600" height="900" usemap="#PERSPECTIVE" id="PERSPECTIVE" border="0">
 <map name="PERSPECTIVE">
 
-<area shape="poly" coords="1204,512,1013,518,1013,290,1202,268" href="../images/scheduleposter.png" target="_blank" alt="View Schedule" title="View Schedule"/>
+<area shape="poly" coords="1204,512,1013,518,1013,290,1202,268" href="#schedule" alt="View schedule" title="View schedule"/>
 
-<area shape="poly" coords="649,611,651,648,558,646,568,610" href="archive.html" alt="To archive" title="To archive" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/theater/theater_archivehover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+<area shape="poly" coords="649,611,651,648,558,646,568,610" href="archive.html" alt="To Archive (watch past events!)" title="To Archive (watch past events!)" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/theater/theater_archivehover.jpg',1)" onMouseOut="MM_swapImgRestore()">
 
-<area shape="poly" coords="613,889,535,889,535,888,558,787,612,790" href="entry.html" alt="To entry" title="To entry" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/theater/theater_entryhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
+<area shape="poly" coords="613,889,535,889,535,888,558,787,612,790" href="entry.html" alt="To Entry" title="To Entry" onMouseOver="MM_swapImage('PERSPECTIVE','','../images/theater/theater_entryhover.jpg',1)" onMouseOut="MM_swapImgRestore()">
 
 </map></div>
 
-<div id="midview1" class="grid"><div class="midview1">
-<!-- copy/paste lightbox content here, all jpg, png, gifs -->
-<a href="spaces/entry.html"><img class="nav" src="images/poster.png" style="max-width: 100%; height:auto;"></a>
+
+<div class="sticky"><a class="sticky"href="#PERSPECTIVE">&#8679;</a></div>
 
 
+<div id="schedule" class="fullsize" >
+<img src="../images/scheduleposter.png ">
 </div>
-
-<div id="midview2" class="grid"><div class="midview2">
-<!-- copy/paste lightbox content here, all jpg, png, gifs -->
-<a href="spaces/entry.html"><img class="nav" src="images/poster.png" style="max-width: 100%; height:auto;"></a>
-
-
-</div>
-
-<!-- put images with links to full pdfs or external video viewing here -->
-<a href="https://www.google.com/" title="caption">
-<img src="../workimage/samplegif.gif" /></a></div>
-<script>
-    new SimpleLightbox({elements: '.midview1 a'});
-    new SimpleLightbox({elements: '.midview2 a'});
-</script>
-
-    <!-- for multiple middle views, duplicate last div and subset div immediately below, rename all midview2, midview3 etc. -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="../scripts/responsivemap.js"></script>
