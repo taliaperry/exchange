@@ -60,29 +60,23 @@ onLoad="MM_preloadImages('../images/entry/entry_notehover.jpg','../images/entry/
 
 <div id="midview1" class="grid"><div class="midview1">
 <!-- copy/paste lightbox content here, all jpg, png, gifs -->
-<a href="spaces/entry.html"><img class="nav" src="images/curatorialnote1.jpg "></a>
-<a href="spaces/entry.html"><img class="nav" src="images/curatorialnote2.jpg "></a>
+<a href="spaces/entry.html"><img class="nav" src="../images/curatorialnote1.jpg "></a>
+<a href="spaces/entry.html"><img class="nav" src="../images/curatorialnote2.jpg "></a>
 
 
 </div>
-
-<div id="midview2" class="grid"><div class="midview2">
-<!-- copy/paste lightbox content here, all jpg, png, gifs -->
-<a href="spaces/entry.html"><img class="nav" src="images/poster.png"></a>
-
-
 </div>
-
-<!-- put images with links to full pdfs or external video viewing here -->
-<a href="https://www.google.com/" title="caption">
-<img src="../workimage/samplegif.gif" /></a></div>
-<script>
-    new SimpleLightbox({elements: '.midview1 a'});
-    new SimpleLightbox({elements: '.midview2 a'});
-</script>
-
     <!-- for multiple middle views, duplicate last div and subset div immediately below, rename all midview2, midview3 etc. -->
+    <div id="midview2" class="grid"><div class="midview2">
+    <!-- copy/paste lightbox content here, all jpg, png, gifs -->
+    <a href="spaces/entry.html"><img class="nav" src="../images/poster.png"></a>
+    </div>
+    </div>
 
+<script>
+        new SimpleLightbox({elements: '.midview1 a'});
+        new SimpleLightbox({elements: '.midview2 a'});
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="../scripts/responsivemap.js"></script>
