@@ -1,41 +1,43 @@
 <html>
 
-<head><title>EX-CHANGE 2020 | map</title>
+<head><title>Welcome to EX-CHANGE 2020</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="scripts/baseline.css">
 <script src="scripts/behavior.js"></script>
 <style>
+body {
+        background-color:#696969;color:#696969;
+        font-family:'Encode Sans Semi Expanded',sans-serif;font-size:16px;font-weight:400;
+		    width: 80%;
+        max-width: 800;
+        margin-left: auto;
+        margin-right: auto;}
 .glance {
   -webkit-transform: perspective(0) rotateX(0) rotateY(0); /* Safari */
   transform: perspective(0) rotateX(0) rotateY(0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   mix-blend-mode: multiply;
-  z-index: -10;
+}
+h1 {
+  font-family:'Encode Sans Semi Expanded',sans-serif;font-size:52px;font-weight:1600;
+  color:#000000;
+  text-align: center;
+}
+h1:hover{
+  color:#ffee21;
 }
 </style>
 </head>
 
 <body
-onLoad="MM_preloadImages('images/h.gif')">
+onLoad="MM_preloadImages('landing_gif.gif')">
 
-<div id="topbar">
-<div style="align-content: left;" >
-<a href="./">
-<img src="images/a.png" id="logo" alt="EX-CHANGE" onMouseOver="MM_swapImage('logo','','images/h.gif',1)" onMouseOut="MM_swapImgRestore()"></a></div>
-<div align=right>
-    <p style="padding:.25em 1.5em 0 0;">
-    <a class="nav" href="map.html">MAP</a><br>
-    <a class="nav" href="info.html">INFO</a><br>
-    <a class="nav" href="help.html">HELP</a></p></div>
-    </div>
+  <a href="spaces/entry.html"><img class="glance" id="img" src="images/landing_gif.gif" width="800"></a>
 
-
-  <img class="glance" id="img" src="https://taliaperry.github.io/exchange/images/h.gif" width="1600">
-
-
+<span><a href="spaces/entry.html"><h1>Step Inside?</h1></a></span>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <!-- move to shared JS file responsive map -->
