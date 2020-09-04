@@ -1,45 +1,49 @@
 <html>
 
-<head><title>EX-CHANGE 2020 | map</title>
+<head><title>Welcome to EX-CHANGE 2020</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="scripts/baseline.css">
 <script src="scripts/behavior.js"></script>
 <style>
+body {
+        background-color:#696969;color:#000000;
+        font-family:'Encode Sans Semi Expanded',sans-serif;font-size:32px;font-weight:700;
+		    width: 80%;
+        max-width: 800;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;}
 .glance {
   -webkit-transform: perspective(0) rotateX(0) rotateY(0); /* Safari */
   transform: perspective(0) rotateX(0) rotateY(0);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   mix-blend-mode: multiply;
-  z-index: -10;
 }
+
+
+a {
+color:#000000;text-decoration:none;
+-webkit-transition:color .4s ease-in;-moz-transition:color .4s ease-in;-o-transition:color .4s ease-in;transition:color .4s ease-in;}
+a:link {color:#000000;text-decoration:none;}
+a:visited {color:#000000;text-decoration:none;}
+a:hover {color:#ffee21;text-decoration:none;}
+a:focus {color:#ffee21;text-decoration:none;}
+a:active {color:#000000;text-decoration:none;}
+a {color:#000000;text-decoration:none;}
 </style>
 </head>
 
 <body
-onLoad="MM_preloadImages('images/h.gif')">
+onLoad="MM_preloadImages('landing_gif.gif')">
 
-<div id="topbar">
-<div style="align-content: left;" >
-<a href="./">
-<img src="images/a.png" id="logo" alt="EX-CHANGE" onMouseOver="MM_swapImage('logo','','images/h.gif',1)" onMouseOut="MM_swapImgRestore()"></a></div>
-<div align=right>
-    <p style="padding:.25em 1.5em 0 0;">
-    <a class="nav" href="map.html">MAP</a><br>
-    <a class="nav" href="info.html">INFO</a><br>
-    <a class="nav" href="help.html">HELP</a></p></div>
-    </div>
+  <a href="spaces/entry.html"><img class="glance" id="img" src="images/landing_gif.gif" width="100%"></a>
 
-
-  <img class="glance" id="img" src="https://taliaperry.github.io/exchange/images/h.gif" width="1600">
-
-
+<p><a href="spaces/entry.html">Step inside!</a></p>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<!-- move to shared JS file responsive map -->
-<script src="scripts/responsivemap.js"></script>
+
 <script>
 $(document ).ready(function() {
   var x = 0.5;
@@ -65,5 +69,5 @@ $(document ).ready(function() {
 });
 </script>
 </body>
-    <footer>&#169; 2020 Carnegie Mellon University School of Architecture | All Rights Reserved</footer>
+
 </html>
